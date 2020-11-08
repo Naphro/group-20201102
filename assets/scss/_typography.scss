@@ -1,0 +1,19 @@
+@font-face {
+  font-family: harenosora;
+  src: url(../font/harenosora_web.woff2) format('woff2'),
+    url(../font/harenosora_web.otf) format('opentype');
+}
+
+@font-face {
+  font-family: urw-form-condensed;
+  src: url(../font/urw-form-condensed.woff2) format('woff2'),
+    url(../font/urw-form-condensed.otf) format('opentype');
+}
+
+body {
+  font-family: urw-form-condensed, a-otf-gothic-bbb-pr6n, sans-serif;
+}
+
+.font-jp {
+  font-family: harenosora, serif;
+}

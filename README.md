@@ -1,0 +1,1 @@
+https://editions-life.jp/

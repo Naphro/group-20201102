@@ -1,0 +1,145 @@
+.menu {
+  width: 3.5rem;
+  display: block;
+  margin: 1rem;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0.6rem 0;
+  }
+}
+
+.hero {
+  height: 100vw;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+
+  .white-logo {
+    width: 7.75rem;
+    height: auto;
+  }
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__imgs {
+    width: 100%;
+    height: calc(100% + 50px);
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translateY(-50px);
+    }
+  }
+}
+
+.cart {
+  position: absolute;
+  top: 3.75rem;
+  right: 0.25rem;
+  text-align: center;
+
+  &__img {
+    height: 1.5rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 0.5rem;
+    letter-spacing: 0.05rem;
+    white-space: nowrap;
+  }
+}
+
+.subtitle {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.6;
+
+  &__text {
+    position: relative;
+    z-index: 200;
+    // left: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.25rem;
+      left: -1rem;
+      background-image: url('../images/arrow_wh.svg');
+      background-repeat: no-repeat;
+      transform: rotate(90deg);
+      transform-origin: left bottom;
+      width: 54px;
+      height: 6px;
+      animation: arrow-down 2s ease-in-out 1s infinite;
+    }
+  }
+
+  @keyframes arrow-down {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    25% {
+      clip-path: inset(0 0 0 0);
+    }
+    50% {
+      clip-path: inset(0 0 0 0);
+    }
+    100% {
+      clip-path: inset(0 0 0 100%);
+    }
+  }
+
+  &__bg {
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  span + span {
+    margin-left: 0.875rem;
+  }
+
+  p {
+    position: relative;
+  }
+}
