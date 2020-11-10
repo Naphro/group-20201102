@@ -1,0 +1,29 @@
+.company {
+  padding-top: 4rem;
+
+  .section__title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.75rem;
+  }
+
+  &-info {
+    &__item {
+      padding: 0.75rem 0;
+      border-top: 1px solid rgba(#000000, 0.25);
+      display: flex;
+      font-size: 0.875rem;
+    }
+
+    &__field {
+      flex-basis: 25%;
+      color: gray;
+    }
+
+    &__value {
+      line-height: 1.8;
+    }
+  }
+}
