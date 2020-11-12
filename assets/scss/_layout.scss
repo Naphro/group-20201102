@@ -10,6 +10,9 @@ header {
 
 .container {
   padding: 2rem;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -27,6 +30,20 @@ header {
       background-size: cover;
       width: 38px;
       height: 3px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    &__title {
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem;
+
+      &::after {
+        width: 52px;
+        height: 4px;
+      }
     }
   }
 }

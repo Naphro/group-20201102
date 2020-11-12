@@ -144,3 +144,64 @@
     position: relative;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 4.5rem;
+    margin: 3.5rem 2.5rem;
+
+    &::before,
+    &::after {
+      height: 4px;
+      margin: 0.65rem 0;
+    }
+  }
+
+  .logo {
+    visibility: hidden;
+  }
+
+  .hero {
+    height: 100vh;
+    margin-bottom: 16rem;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    right: 12rem;
+
+    &__img {
+      height: 2.25rem;
+    }
+
+    &__text {
+      margin-right: 1.5rem;
+      font-size: 0.875rem;
+      letter-spacing: 0.15rem;
+      padding-bottom: 0.6rem;
+    }
+  }
+
+  .subtitle {
+    padding-left: 6rem;
+    padding-bottom: 3.5rem;
+
+    &__text {
+      font-size: 3rem;
+      letter-spacing: 0.3rem;
+
+      &::before {
+        width: 110px;
+        height: 10px;
+        left: -3.5rem;
+      }
+    }
+
+    &__bg {
+      height: 12rem;
+      width: 60%;
+    }
+  }
+}

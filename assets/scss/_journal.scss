@@ -16,7 +16,7 @@
       width: 100%;
       height: 83%;
       left: 0;
-      top: 14rem;
+      top: 22.5%;
       background-color: #f2f2f2;
       z-index: -1;
     }
@@ -65,5 +65,56 @@
 
   .btn {
     margin-top: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .journal {
+    .container {
+      margin: 0;
+      padding: 2.5rem;
+      max-width: none;
+    }
+
+    &__items {
+      padding-top: 3rem;
+      flex-wrap: nowrap;
+
+      &::before {
+        height: 72%;
+        top: 40.5%;
+      }
+    }
+
+    &-item {
+      &__picture {
+        margin-bottom: 2rem;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2rem;
+      }
+
+      &__date {
+        margin-bottom: 1rem;
+      }
+
+      &__tag {
+        order: -1;
+        padding: 0.5rem 1.5rem;
+        margin-bottom: 0.875rem;
+      }
+
+      &__title {
+        padding: 0;
+      }
+    }
+  }
+
+  .btn {
+    top: 2.5rem;
   }
 }

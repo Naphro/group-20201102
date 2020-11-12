@@ -33,6 +33,7 @@
     width: 100%;
     overflow-x: scroll;
     white-space: nowrap;
+    margin-bottom: 1rem;
   }
 }
 
@@ -76,6 +77,8 @@
 
   &__control {
     display: flex;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
   }
 
   &__prev,
@@ -108,5 +111,72 @@
 
   &__next::before {
     transform: translate(-70%, -50%) rotate(45deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    padding-top: 23rem;
+    margin-bottom: 6.5rem;
+
+    .section__title {
+      margin-left: 0;
+      padding: 3rem 2.5rem;
+    }
+
+    &::before {
+      height: 37.5rem;
+    }
+
+    &__summary {
+      font-size: 2.5rem;
+      line-height: 1.8;
+      top: 3rem;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__sliders {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .slider {
+    width: 20rem;
+
+    &:first-child {
+      margin-left: 2.5rem;
+    }
+
+    & + .slider {
+      margin-left: 1.5rem;
+    }
+
+    &__img {
+      margin-bottom: 2rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 0.875rem;
+    }
+
+    &__text {
+      line-height: 2.5;
+    }
+  }
+
+  .slider__prev,
+  .slider__next {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .btn {
+    position: absolute;
+    top: 26.5rem;
+    right: 2.5rem;
   }
 }
