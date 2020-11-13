@@ -133,7 +133,7 @@
       line-height: 1.8;
       top: 3rem;
 
-      br {
+      br:first-child {
         display: none;
       }
     }

@@ -87,15 +87,17 @@
 
     &__caption {
       position: absolute;
-      right: 7rem;
-      top: 12rem;
+      right: 25%;
+      transform: translateX(50%);
+      top: calc(35% + 10%);
       font-size: 0.875rem;
     }
 
     &__btn {
       position: absolute;
-      top: 16.5rem;
-      left: 27.5rem;
+      top: calc((100% - 35%) / 2 + 35%);
+      right: 25%;
+      transform: translateX(50%);
     }
   }
 }

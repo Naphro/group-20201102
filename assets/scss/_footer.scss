@@ -32,9 +32,10 @@
     letter-spacing: 0.1rem;
     text-align: center;
     color: #000000;
-    line-height: 56px;
+    // line-height: 56px;
+    line-height: 3.5;
     border: 1px solid rgba(#000000, 0.25);
-    border-radius: 28px;
+    border-radius: 999px;
     margin-bottom: 4rem;
 
     &::before {
@@ -94,14 +95,13 @@
 
 @media (min-width: 768px) {
   .footnav {
-    margin: 0;
     padding: 2.5rem;
-    max-width: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 30rem;
     justify-content: center;
+    max-width: calc(1010px + 2.5rem);
 
     &__title {
       font-size: 2.85rem;
@@ -113,11 +113,13 @@
     }
 
     &__btn {
-      width: 43%;
+      width: 36%;
       order: 9;
       margin-left: auto;
       margin-bottom: -1rem;
       margin-top: 5rem;
+      font-size: 1.25rem;
+      min-width: 310px;
     }
 
     &__totop {
